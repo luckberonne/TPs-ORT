@@ -1,0 +1,16 @@
+# Eclipse
+*.class
+*.project
+*.classpath
+.settings/
+bin/
+# Logs
+*.log
+# Eclipse specific
+*.tmp
+*.bak
+*.swp
+*.swo
+# OS specific files
+.DS_Store
+Thumbs.db
