@@ -1,4 +1,4 @@
-package edu.ort.t1.tp1;
+package edu.ort.t1.tp1.actividad1;
 import java.util.Scanner;
 
 public class PromedioNotas {
