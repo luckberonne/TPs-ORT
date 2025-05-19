@@ -5,19 +5,20 @@ import java.util.Scanner;
 public class SueldosEmpleado {
     public static void ejecutar(Scanner scanner) {
         double sueldo, total = 0;
-        int contador = 0;
+        int contador = 1;
+        boolean sueldoNegativo = false;
 
-        while (contador < 12) {
+        System.out.print("Ingrese sueldo del mes " + (contador + 1) + ": ");
+        sueldo = scanner.nextDouble();
+        while (contador <= 12 && sueldo >= 0) {
             System.out.print("Ingrese sueldo del mes " + (contador + 1) + ": ");
             sueldo = scanner.nextDouble();
 
-            if (sueldo < 0) {
-                System.out.println("Sueldo negativo detectado. Finalizando carga.");
-                break;
-            }
 
-            total += sueldo;
-            contador++;
+				total += sueldo;
+				contador++;
+            System.out.print("Ingrese sueldo del mes " + (contador + 1) + ": ");
+            sueldo = scanner.nextDouble();
         }
 
         System.out.println("Total cobrado hasta el momento: $" + total);

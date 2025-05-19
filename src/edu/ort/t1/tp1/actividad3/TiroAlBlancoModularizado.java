@@ -66,15 +66,19 @@ public class TiroAlBlancoModularizado {
     }
 
     public static int calcularPuntos(int distancia) {
+        int puntos;
+
         if (distancia == 0) {
-            return 500;
+            puntos = 500;
         } else if (distancia <= 10) {
-            return 250;
+            puntos = 250;
         } else if (distancia <= 50) {
-            return 100;
+            puntos = 100;
         } else {
-            return 0;
+            puntos = 0;
         }
+
+        return puntos;
     }
 
     public static void mostrarResultados(String ganador, int mayorPuntaje, int tirosAlCentro) {
